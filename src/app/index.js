@@ -34,7 +34,7 @@ __  __  __
 `;
 
 const App = () => {
-  const [storedTheme] = useLocalStorage('theme', 'dark');
+  const [storedTheme] = useLocalStorage('theme', 'light');
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
