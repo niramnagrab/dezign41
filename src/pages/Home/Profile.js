@@ -7,8 +7,8 @@ import DecoderText from 'components/DecoderText';
 import Divider from 'components/Divider';
 import Image from 'components/Image';
 import Section from 'components/Section';
-import ProfileImg from 'assets/profile.jpg';
-import ProfileImgLarge from 'assets/profile-large.jpg';
+import ProfileImg from 'assets/profile2.jpg';
+import ProfileImgLarge from 'assets/profile2.jpg';
 import ProfileImgPlaceholder from 'assets/profile-placeholder.jpg';
 import { reflow } from 'utils/transition';
 import { media } from 'utils/style';
@@ -24,25 +24,34 @@ const ProfileText = ({ status, titleId }) => (
       level={3}
       id={titleId}
     >
-      <DecoderText text="More about Dezign41" start={status !== 'exited'} delay={500} />
+      <DecoderText
+        text="Your digital partner
+"
+        start={status !== 'exited'}
+        delay={500}
+      />
     </Heading>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      Dezign41 is a web design and web development agency based in London and Shanghai. We
-      have been working with individuals as well as small and medium size companies to
-      help them create wonderful digital products. Below is a selection of a few companies
-      we have been working with, although not all of them are showcased here. If you would
-      like to know more about other projects we have worked on, feel free to let us know
-      so that we can share our brochure with you!
+      Specialising in web design and development services, we work with exceptional
+      companies around the world to help them bring to life their digital ideas. We always
+      start by learning more about the customer, followed by the analysis, research,
+      planning, wire framing and content creation of your product. Once completed, we then
+      more on to the web design and SEO driven content. In the digital era, it is crucial
+      to provide exceptional experience to your users and we are here to help you analyse
+      the competition, create content that matters, communicate effectively and convert
+      visitors.
     </Text>
     <Text
       className={classNames('profile__description', `profile__description--${status}`)}
       size="l"
     >
-      If you would like to work with us, please feel free to drop us a line. Want to go
-      digital? Let us be your digital partner!
+      <b>
+        Client-focused and customer-centric, we create web solutions that deliver tangible
+        business results. Want to go digital? Let us be your digital partner!
+      </b>
     </Text>
   </Fragment>
 );
@@ -78,19 +87,19 @@ const Profile = ({ id, visible, sectionRef }) => {
             </div>
             <div className="profile__column">
               <div className="profile__tag" aria-hidden>
-                <Divider
+                {/* <Divider
                   notchWidth="64px"
                   notchHeight="8px"
                   collapsed={status !== 'entered'}
                   collapseDelay={1000}
-                />
+                /> */}
                 <div
                   className={classNames(
                     'profile__tag-text',
                     `profile__tag-text--${status}`
                   )}
                 >
-                  About Us
+                  {/* About Us */}
                 </div>
               </div>
               <div className="profile__image-wrapper">

@@ -69,16 +69,6 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
               </Suspense>
             )}
             <header className="intro__text">
-              <h1
-                className={classNames('intro__name', `intro__name--${status}`)}
-                id={titleId}
-              >
-                <DecoderText
-                  text="London and Shanghai Web Design Agency"
-                  start={!prerender}
-                  delay={300}
-                />
-              </h1>
               <Heading level={0} as="h2" className="intro__title">
                 <VisuallyHidden className="intro__title-label">{`Web Design + ${introLabel}`}</VisuallyHidden>
                 <span
@@ -94,7 +84,7 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                     )}
                     style={{ '--delay': tokens.base.durationXS }}
                   >
-                    Dezign41
+                    Web Design
                   </span>
                   <span
                     className={classNames(
@@ -133,6 +123,16 @@ function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) 
                   ))}
                 </TransitionGroup>
               </Heading>
+              <h1
+                className={classNames('intro__name', `intro__name--${status}`)}
+                id={titleId}
+              >
+                <DecoderText
+                  text="We create impactful digital experience that attract and engage. Check out our work below or learn more about what we do."
+                  start={!prerender}
+                  delay={300}
+                />
+              </h1>
             </header>
             {windowSize.width > media.tablet && (
               <div

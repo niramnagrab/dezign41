@@ -82,7 +82,7 @@ function Header(props) {
             </NavLink>
           ))}
         </div>
-        {/* <NavbarIcons /> */}
+        <NavbarIcons />
       </nav>
       <Transition
         mountOnEnter

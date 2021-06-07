@@ -1,6 +1,6 @@
 import classNames from 'classnames';
-import { ReactComponent as Twitter } from 'assets/icons/twitter.svg';
-import { ReactComponent as Dribbble } from 'assets/icons/dribbble.svg';
+import { ReactComponent as Linkedin } from 'assets/icons/linkedin2.svg';
+import { ReactComponent as Instagram } from 'assets/icons/instagram2.svg';
 import { ReactComponent as Github } from 'assets/icons/github.svg';
 import { ReactComponent as Error } from 'assets/icons/error.svg';
 import { ReactComponent as Menu } from 'assets/icons/menu.svg';
@@ -14,8 +14,8 @@ import { ReactComponent as Figma } from 'assets/icons/figma.svg';
 import './index.css';
 
 export const icons = {
-  twitter: Twitter,
-  dribbble: Dribbble,
+  linkedin: Linkedin,
+  instagram: Instagram,
   github: Github,
   error: Error,
   menu: Menu,

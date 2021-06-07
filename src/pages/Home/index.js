@@ -4,6 +4,7 @@ import Intro from 'pages/Home/Intro';
 import ProjectSummary from 'pages/Home/ProjectSummary';
 import Profile from 'pages/Home/Profile';
 import Footer from 'components/Footer';
+
 import { usePrefersReducedMotion, useRouteTransition } from 'hooks';
 import { useLocation } from 'react-router-dom';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
@@ -152,6 +153,12 @@ const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
@@ -221,11 +228,7 @@ const Home = () => {
           ],
         }}
       />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+
       <Footer />
     </div>
   );

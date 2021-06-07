@@ -21,7 +21,7 @@ const mailTransport = nodemailer.createTransport({
   },
 });
 
-const ORIGIN = 'https://hamishw.com';
+const ORIGIN = 'https://dezign41.com';
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
 

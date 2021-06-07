@@ -1,18 +1,18 @@
 export const navLinks = [
   {
-    label: 'Projects',
+    label: 'Home',
     pathname: '/',
-    hash: '#project-1',
+    hash: '#intro',
   },
   {
-    label: 'Details',
+    label: 'Portfolio',
     pathname: '/',
-    hash: '#details',
+    hash: '#portfolio',
   },
-  // {
-  //   label: 'Articles',
-  //   pathname: '/articles',
-  // },
+  {
+    label: 'About',
+    pathname: '/about',
+  },
   {
     label: 'Contact',
     pathname: '/contact',
@@ -21,18 +21,18 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com',
-    icon: 'twitter',
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/company/dezign41',
+    icon: 'linkedin',
   },
   {
-    label: 'Figma',
-    url: 'https://www.figma.com',
-    icon: 'figma',
+    label: 'Instagram',
+    url: 'https://www.instagram.com/dezign41_shanghai',
+    icon: 'instagram',
   },
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/niramnagrab',
     icon: 'github',
   },
 ];

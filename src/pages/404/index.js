@@ -50,8 +50,8 @@ function NotFound() {
                     `page-404__description--${status}`
                   )}
                 >
-                  This page could not be found. It either doesn’t exist or was deleted. Or
-                  perhaps you don’t exist.
+                  We are srry, this page could not be found. It either doesn’t exist or
+                  was deleted.
                 </Text>
                 <Button
                   secondary

@@ -96,7 +96,7 @@
 
 .image__placeholder {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   transition: opacity var(--durationM) ease var(--delay);
   pointer-events: none;
   display: block;
